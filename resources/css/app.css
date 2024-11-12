@@ -21,7 +21,7 @@
 }
 @layer base {
     html {
-        @apply bg-[url('../images/bg.svg')] bg-cover bg-no-repeat;
+        @apply bg-[url('../images/bg.png')] bg-cover bg-no-repeat;
         @apply text-white font-['Halyard-Display-ExtraLight'];
     }
 
