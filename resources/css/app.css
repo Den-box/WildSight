@@ -1,3 +1,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@font-face {
+    font-family: 'Halyard-Display-Regular';
+    src: url('/resources/fonts/Halyard-Display-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Halyard-Display-Light';
+    src: url('/resources/fonts/Halyard-Display-Light.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Halyard-Display-ExtraLight';
+    src: url('/resources/fonts/Halyard-Display-ExtraLight.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@layer base {
+    html {
+        @apply bg-[url('../images/bg.svg')] bg-cover bg-no-repeat;
+        @apply text-white font-['Halyard-Display-ExtraLight'];
+    }
+
+}
