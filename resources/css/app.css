@@ -19,6 +19,12 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'Halyard-Display-Bold';
+    src: url('/resources/fonts/Halyard-Display-Bold.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
 @layer base {
     html {
         @apply bg-[url('../images/bg.png')] bg-cover bg-no-repeat;
