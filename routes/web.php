@@ -1,11 +1,17 @@
 <?php
 
+use App\Http\Controllers\EmailController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::post('/email', [EmailController::class,'store'] )->name('email_store');
+Route::get('/thanks', function () {
+    return view('thanks');
+})->name('thanks');
 
 Route::get('/dashboard', function () {
     return view('dashboard');

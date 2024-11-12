@@ -18,14 +18,8 @@
 <section class="m-auto">
     <img class="block m-auto" alt="Insights for NATURE" src="{{ Vite::asset('resources/images/title.svg') }}">
     <h2 class="mt-4 text-center text-4xl font-thin text-gray-500">WildSight gives you and your team the tools to <br/> make sense of a fast-moving market.</h2>
-    <form method="post" action="{{route("email_store")}}" class="p-6">
-        @csrf
-        <div class="mt-6">
-            <x-text-input id="email" name="email" type="email" class="m-auto block w-1/2" autocomplete="email" data-placement="email" placeholder="E-mail" />
-            <x-input-error :messages="$errors->updatePassword->get('email')" class="mt-2"/>
-        </div>
-        <x-primary-button class="mt-5 mx-auto block w-1/2">{{ __('Join the waitlist') }}</x-primary-button>
-    </form>
+
+    <h2 class="mt-4 text-center text-4xl">Thank you for your subscription</h2>
 </section>
 <section class="m-auto">
     <div class="flex flex-wrap mb-5">
