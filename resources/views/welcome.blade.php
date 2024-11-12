@@ -11,30 +11,36 @@
 
 </head>
 <body class="antialiased relative flex flex-col min-h-screen mx-auto">
-<header class="flex flex-wrap items-center justify-between">
-    <img class="mx-2" alt="python" src="{{ Vite::asset('resources/images/WildSight.png') }}">
-    <div class="mx-8"><a class="inline-block border-white border px-4 py-2 rounded-md hover:bg-cyan-400 hover:border-cyan-400 hover:text-black transition ease-in-out duration-150" href="mailto:emily.a.l.birch@gmail.com">Get in touch</a></div>
+<header class="block sm:flex mb-8 sm:mb-auto flex-wrap items-center justify-between">
+    <img class="mx-auto sm:mx-2" alt="python" src="{{ Vite::asset('resources/images/WildSight.png') }}">
+    <div class="mx-auto sm:mx-8"><a class="mx-5 sm:mx-auto text-center block sm:inline-block border-white border px-4 py-2 rounded-md hover:bg-cyan-400
+         hover:border-cyan-400
+    hover:text-black transition ease-in-out duration-150" href="mailto:emily.a.l.birch@gmail.com">Get in touch</a></div>
 </header>
 <section class="m-auto">
-    <img class="block m-auto" alt="Insights for NATURE" src="{{ Vite::asset('resources/images/title.svg') }}">
-    <h2 class="mt-4 text-center text-4xl font-thin text-gray-500">WildSight gives you and your team the tools to <br/> make sense of a fast-moving market.</h2>
+    <img class="block px-2 mx-auto max-w-full" alt="Insights for NATURE" src="{{ Vite::asset('resources/images/title.svg') }}">
+    <h2 class="mt-4 text-center text-2xl sm:text-4xl font-thin text-gray-500">WildSight gives you and your team the tools to <br/> make sense of a
+        fast-moving market
+        .</h2>
     <form method="post" action="{{ route("email.store") }}" class="p-6">
         @csrf
         <div class="mt-6">
-            <x-text-input id="email" name="email" type="email" class="m-auto block w-1/2" autocomplete="email" data-placement="email" placeholder="E-mail" />
+            <x-text-input id="email" name="email" type="email" class="m-2 sm:m-auto block w-full sm:w-1/2" autocomplete="email"
+                          data-placement="email"
+                          placeholder="E-mail" />
             <x-input-error :messages="$errors->updatePassword->get('email')" class="mt-2"/>
         </div>
-        <x-primary-button class="mt-5 mx-auto block w-1/2">{{ __('Join the waitlist') }}</x-primary-button>
+        <x-primary-button class="m-2 sm:mx-auto block w-full sm:w-1/2 mt-5">{{ __('Join the waitlist') }}</x-primary-button>
     </form>
 </section>
 <section class="m-auto">
-    <div class="flex flex-wrap mb-5">
-        <img class="mx-2" alt="WildSight1" src="{{ Vite::asset('resources/images/Image1.png') }}">
-        <img class="mx-2" alt="WildSight2" src="{{ Vite::asset('resources/images/Image2.png') }}">
-        <img class="mx-2" alt="WildSight3" src="{{ Vite::asset('resources/images/Image3.png') }}">
-        <img class="mx-2" alt="WildSight4" src="{{ Vite::asset('resources/images/Image4.png') }}">
-        <img class="mx-2" alt="WildSight5" src="{{ Vite::asset('resources/images/Image5.png') }}">
-        <img class="mx-2" alt="WildSight6" src="{{ Vite::asset('resources/images/Image6.png') }}">
+    <div class="flex flex-wrap mb-5 mx-auto justify-around">
+        <img class="m-2 w-24 sm:w-48" alt="WildSight1" src="{{ Vite::asset('resources/images/Image1.png') }}">
+        <img class="m-2 w-24 sm:w-48" alt="WildSight2" src="{{ Vite::asset('resources/images/Image2.png') }}">
+        <img class="m-2 w-24 sm:w-48" alt="WildSight3" src="{{ Vite::asset('resources/images/Image3.png') }}">
+        <img class="m-2 w-24 sm:w-48" alt="WildSight4" src="{{ Vite::asset('resources/images/Image4.png') }}">
+        <img class="m-2 w-24 sm:w-48" alt="WildSight5" src="{{ Vite::asset('resources/images/Image5.png') }}">
+        <img class="m-2 w-24 sm:w-48" alt="WildSight6" src="{{ Vite::asset('resources/images/Image6.png') }}">
     </div>
 </section>
 </body>
