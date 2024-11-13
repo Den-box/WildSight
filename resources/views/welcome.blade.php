@@ -15,22 +15,21 @@
     <img class="mx-auto sm:mx-2" alt="python" src="{{ Vite::asset('resources/images/WildSight.png') }}">
     <div class="mx-auto sm:mx-8"><a class="mx-5 sm:mx-auto text-center block sm:inline-block border-white border px-4 py-2 rounded-md hover:bg-cyan-400
          hover:border-cyan-400
-    hover:text-black transition ease-in-out duration-150 font-['Halyard-Display-Bold']" href="mailto:emily.a.l.birch@gmail.com">Get in touch</a></div>
+    hover:text-black transition ease-in-out duration-150" href="mailto:emily.a.l.birch@gmail.com">Get in touch</a></div>
 </header>
 <section class="m-auto">
     <img class="block px-2 mx-auto max-w-full" alt="Insights for NATURE" src="{{ Vite::asset('resources/images/title.svg') }}">
-    <h2 class="mt-4 text-center text-2xl sm:text-4xl font-thin text-gray-500">WildSight gives you and your team the tools to <br/> make sense of a
-        fast-moving market
-        .</h2>
+    <h2 class="mt-4 text-center text-2xl sm:text-4xl font-medium text-zinc-400">WildSight gives you and your team the tools to <br/> make sense of a
+        fast-moving market.</h2>
     <form method="post" action="{{ route("email.store") }}" class="p-6">
         @csrf
         <div class="mt-6">
             <x-text-input id="email" name="email" type="email" class="m-2 sm:m-auto block w-full sm:w-1/2" autocomplete="email"
                           data-placement="email"
-                          placeholder="E-mail" />
+                          placeholder="Email" />
             <x-input-error :messages="$errors->updatePassword->get('email')" class="mt-2"/>
         </div>
-        <x-primary-button class="m-2 sm:mx-auto block w-full sm:w-1/2 mt-5 font-black font-['Halyard-Display-Bold']">{{ __('Join the waitlist')
+        <x-primary-button class="m-2 sm:mx-auto block w-full sm:w-1/2 mt-5 font-thin font-['Halyard-Display-SemiBold'] normal-case">{{ __('Join the waitlist')
         }}</x-primary-button>
     </form>
 </section>
