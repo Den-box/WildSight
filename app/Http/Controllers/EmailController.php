@@ -28,6 +28,9 @@ class EmailController extends Controller
      */
     public function store(Request $request)
     {
+        $request->validate([
+            'email' => 'required|unique:emails|max:255',
+        ]);
         $mail = new email();
         $mail->email = $request->input('email');
         $mail->save();
