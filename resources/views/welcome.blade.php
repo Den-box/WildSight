@@ -11,11 +11,8 @@
 
 </head>
 <body class="antialiased relative flex flex-col min-h-screen mx-auto">
-<header class="block sm:flex mb-8 sm:mb-auto flex-wrap items-center justify-between">
-    <img class="mx-auto sm:mx-2" alt="python" src="{{ Vite::asset('resources/images/WildSight.png') }}">
-    <div class="mx-auto sm:mx-8"><a class="mx-5 sm:mx-auto text-center block sm:inline-block border-white border px-4 py-2 rounded-lg hover:bg-cyan-400
-         hover:border-cyan-400
-    hover:text-black transition ease-in-out duration-150" href="mailto:emily.a.l.birch@gmail.com">Get in touch</a></div>
+<header class="block sm:flex mb-8 sm:mb-auto mx-auto items-center">
+    <img class="m-auto block" alt="WildSight" src="{{ Vite::asset('resources/images/WildSight.png') }}">
 </header>
 <section class="m-auto">
     <img class="block px-2 mx-auto max-w-full" alt="Insights for NATURE" src="{{ Vite::asset('resources/images/title.svg') }}">
@@ -29,20 +26,10 @@
                           placeholder="Email" />
             <x-input-error :messages="$errors->updatePassword->get('email')" class="mt-2"/>
         </div>
-        <x-primary-button class="m-2 sm:mx-auto block w-full sm:w-1/2 mt-5 font-thin text-lg font-['Halyard-Display-Medium'] normal-case">{{ __('Join the
-        waitlist')
+        <x-primary-button class="m-2 sm:mx-auto block w-full sm:w-1/2 mt-5 font-thin text-lg text-black font-['Halyard-Text-Book'] normal-case">{{ __('Stay
+        tuned!')
         }}</x-primary-button>
     </form>
-</section>
-<section class="m-auto">
-    <div class="flex flex-wrap mb-5 mx-auto justify-around">
-        <img class="m-2 w-24 sm:w-48 hover:scale-110 transition ease-in-out" alt="WildSight1" src="{{ Vite::asset('resources/images/Image1.png') }}">
-        <img class="m-2 w-24 sm:w-48 hover:scale-110 transition ease-in-out" alt="WildSight2" src="{{ Vite::asset('resources/images/Image2.png') }}">
-        <img class="m-2 w-24 sm:w-48 hover:scale-110 transition ease-in-out" alt="WildSight3" src="{{ Vite::asset('resources/images/Image3.png') }}">
-        <img class="m-2 w-24 sm:w-48 hover:scale-110 transition ease-in-out" alt="WildSight4" src="{{ Vite::asset('resources/images/Image4.png') }}">
-        <img class="m-2 w-24 sm:w-48 hover:scale-110 transition ease-in-out" alt="WildSight5" src="{{ Vite::asset('resources/images/Image5.png') }}">
-        <img class="m-2 w-24 sm:w-48 hover:scale-110 transition ease-in-out" alt="WildSight6" src="{{ Vite::asset('resources/images/Image6.png') }}">
-    </div>
 </section>
 </body>
 </html>

@@ -18,6 +18,8 @@ export default {
                 'base': '#EFEFEF',
                 'button': '#00EEFF',
                 'button_hover': '#00C5D3',
+                'button_light': '#FFFFFFBD',
+                'my_gray': '#181818',
             }
         },
     },
