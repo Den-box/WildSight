@@ -21,6 +21,9 @@
 }
 @layer base {
     html {
+        @apply font-sans font-thin;
+    }
+    body {
         @apply bg-gradient-to-b from-my_gray to-black;
         @apply text-white font-['Halyard-Display-ExtraLight'];
     }
