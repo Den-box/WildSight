@@ -8,32 +8,8 @@
     font-style: normal;
 }
 @font-face {
-    font-family: 'Halyard-Display-Light';
-    src: url('/resources/fonts/Halyard-Display-Light.ttf');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
     font-family: 'Halyard-Display-ExtraLight';
     src: url('/resources/fonts/Halyard-Display-ExtraLight.ttf');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Halyard-Display-Bold';
-    src: url('/resources/fonts/Halyard-Display-Bold.ttf');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Halyard-Display-SemiBold';
-    src: url('/resources/fonts/Halyard-Display-SemiBold.ttf');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Halyard-Display-Medium';
-    src: url('/resources/fonts/Halyard-Display-Medium.ttf');
     font-weight: normal;
     font-style: normal;
 }
